@@ -16,6 +16,9 @@ h1 {
   text-align: center;
   letter-spacing: 6px;
 }
+body{
+  background: wheat;
+}
 
 p{
   color: slategray;
