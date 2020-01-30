@@ -1,0 +1,26 @@
+/* Style Guide
+  * Primary Color: cornflowerblue
+  * Secondary Color: slategray
+*/
+
+/* Typography 
+  * Primary Font: Merriweather Sans
+  * 
+  *
+*/
+
+h1 {
+  color: cornflowerblue;
+  font-size: 50px;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+p{
+  color: slategray;
+}
+
+img {
+  width: 50%;
+}
