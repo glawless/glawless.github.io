@@ -38,7 +38,7 @@ a:hover {
 .background {
   position: relative;
   text-align: center;
-  width: 100%;
+  width: auto;
   height: 285px;
   margin: -26px;
 }
