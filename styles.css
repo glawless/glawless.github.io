@@ -9,19 +9,28 @@
   *
 */
 
-h1 {
-  color: rgb(12, 48, 114);
-  font-size: 50px;
-  font-family: 'Merriweather Sans', sans-serif;
+.background {
+  position: relative;
   text-align: center;
-  letter-spacing: 6px;
+  width: 200%;
+  height: 285px;
+  margin: -26px;
 }
+
 body{
   background: wheat;
 }
 
 a {
   text-decoration: none;
+  color: antiquewhite;
+  position: absolute;
+  text-align: center;
+  letter-spacing: 6px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 p{
@@ -30,4 +39,16 @@ p{
 
 img {
   width: 50%;
+
+}
+
+.center{
+  position: absolute;
+  top: 8%;
+  left: 45%;
+  font-size: 50px;
+  color: whitesmoke;
+  letter-spacing: 6px;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
 }
