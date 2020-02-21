@@ -9,6 +9,32 @@
   *
 */
 
+body{
+  background: wheat;
+}
+
+nav {
+  list-style-type: none;
+  padding: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: cornflowerblue;
+  position: relative;
+  padding: 20px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+a:hover {
+  background-color:#111;
+}
+
 .background {
   position: relative;
   text-align: center;
@@ -17,28 +43,16 @@
   margin: -26px;
 }
 
-body{
-  background: wheat;
-}
-
-a {
-  text-decoration: none;
-  color: antiquewhite;
-  position: absolute;
-  text-align: center;
-  letter-spacing: 6px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: block;
-}
-
 p{
+  margin: 45px;
   color: slategray;
+  font-family: 'Merriweather Sans', sans-serif;
+
 }
 
-img {
-  width: 50%;
+.image {
+  width: 35%;
+  float: right;
 
 }
 
@@ -51,4 +65,19 @@ img {
   letter-spacing: 6px;
   font-family: 'Merriweather Sans', sans-serif;
   text-align: center;
+}
+
+aside {
+  display: inline-block;
+  width: 500px;
+  background-color: cornsilk;
+
+}
+
+li{
+  font-family: 'Merriweather Sans', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  padding: .5em;
+
 }
