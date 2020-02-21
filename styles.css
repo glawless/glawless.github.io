@@ -15,11 +15,11 @@ body{
 
 nav {
   list-style-type: none;
-  padding: 15px;
+  padding: 5px;
   overflow: hidden;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2%;
+  right: 1%;
 }
 
 a {
@@ -37,10 +37,11 @@ a:hover {
 
 .background {
   position: relative;
-  text-align: center;
-  width: auto;
+  background-size: cover;
+  width: 100%;
   height: 285px;
-  margin: -26px;
+  overflow: hidden;
+  margin: 0;
 }
 
 p{
@@ -53,31 +54,40 @@ p{
 .image {
   width: 35%;
   float: right;
-
 }
 
 .center{
   position: absolute;
-  top: 8%;
-  left: 45%;
-  font-size: 50px;
+  top: 11%;
+  left: 25%;
+  font-size: 60px;
   color: whitesmoke;
   letter-spacing: 6px;
   font-family: 'Merriweather Sans', sans-serif;
   text-align: center;
 }
 
-aside {
+.container {
   display: inline-block;
-  width: 500px;
+  width: auto;
   background-color: cornsilk;
-
 }
 
-li{
+.container p {
+  font-size: 25px;
   font-family: 'Merriweather Sans', sans-serif;
-  text-decoration: none;
-  list-style-type: none;
-  padding: .5em;
+  margin: 10px;
+  top: 80%;
+}
 
+aside {
+  display: inline-block;
+  width: auto;
+  background-color: cornsilk;
+}
+
+aside p {
+  font-size: 15px;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin: 10px;
 }
