@@ -19,9 +19,11 @@ h1 {
 body{
   background: wheat;
 }
-nav{
-  align-self: left;
+
+a {
+  text-decoration: none;
 }
+
 p{
   color: slategray;
 }
