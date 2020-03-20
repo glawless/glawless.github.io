@@ -15,11 +15,11 @@ body{
 
 nav {
   list-style-type: none;
-  padding: 5px;
+  padding: 15px;
   overflow: hidden;
   position: absolute;
-  top: 2%;
-  right: 1%;
+  top: 0;
+  right: 0;
 }
 
 a {
@@ -31,63 +31,36 @@ a {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
-a:hover {
-  background-color:#111;
-}
-
 .background {
   position: relative;
-  background-size: cover;
-  width: 100%;
+  text-align: center;
+  width: 200%;
   height: 285px;
-  overflow: hidden;
-  margin: 0;
+  margin: -26px;
 }
 
 p{
   margin: 45px;
   color: slategray;
   font-family: 'Merriweather Sans', sans-serif;
+  font-size: 25px;
 
 }
 
 .image {
   width: 35%;
   float: right;
+  position: relative;
 }
 
 .center{
   position: absolute;
-  top: 11%;
+  top: 5%;
   left: 25%;
-  font-size: 60px;
+  font-size: 70px;
   color: whitesmoke;
   letter-spacing: 6px;
   font-family: 'Merriweather Sans', sans-serif;
   text-align: center;
 }
 
-.container {
-  display: inline-block;
-  width: auto;
-  background-color: cornsilk;
-}
-
-.container p {
-  font-size: 25px;
-  font-family: 'Merriweather Sans', sans-serif;
-  margin: 10px;
-  top: 80%;
-}
-
-aside {
-  display: inline-block;
-  width: auto;
-  background-color: cornsilk;
-}
-
-aside p {
-  font-size: 15px;
-  font-family: 'Merriweather Sans', sans-serif;
-  margin: 10px;
-}
