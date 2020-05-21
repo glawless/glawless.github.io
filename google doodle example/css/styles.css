@@ -1,0 +1,25 @@
+/* My Awesome Styles */
+
+/* Diagnostic Styling 
+  * Change Background Color
+  * Outline Elements
+*/
+
+/* * {
+    outline: 2px dashed orangered;
+} */
+
+/* Doodle Stage */
+#stage {
+  background: brown;
+  height: 300px;
+  width: 600px;
+}
+
+#heart1 {
+    fill:blue;
+}
+
+#heart2 {
+  fill: green;
+}
