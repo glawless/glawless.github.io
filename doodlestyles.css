@@ -6,10 +6,17 @@
   width: 600px;
 }
 
-#heart1 {
-    fill:blue;
+#heart {
+    fill:red;
+    height: 4em;
+    
 }
 
 #heart2 {
   fill: green;
+  height: 4em;
+}
+
+#bone {
+  height: 4em;
 }
