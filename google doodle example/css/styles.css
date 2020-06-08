@@ -1,16 +1,7 @@
 
-/* Diagnostic Styling 
-  * Change Background Color
-  * Outline Elements
-*/
-
-/* * {
-    outline: 2px dashed orangered;
-} */
-
 /* Doodle Stage */
 #stage {
-  background: brown;
+  background: rgb(149, 97, 216);
   height: 300px;
   width: 600px;
 }
