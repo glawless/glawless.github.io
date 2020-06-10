@@ -9,12 +9,13 @@
 #heart {
     fill:red;
     height: 4em;
-    
+    margin-bottom: 14em;
 }
 
 #heart2 {
   fill: green;
   height: 4em;
+  margin-bottom: 8em;
 }
 
 #bone {

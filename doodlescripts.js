@@ -2,8 +2,7 @@ gsap.from(
   '#heart', {
     opacity: 0,
     duration: 2,
-    transform: 0,
-    y: -300
+    y: -600
   });
 
   gsap.from(
@@ -17,5 +16,5 @@ gsap.from(
       '#bone', {
         opacity: 0,
         duration: 2,
-        x: 300
+        x: 100
       });
