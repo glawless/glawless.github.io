@@ -11,13 +11,28 @@ body{
   background: wheat;
 }
 
-nav {
+#navbar {
   list-style-type: none;
-  padding: 15px;
+  padding: 20px;
   overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
+  position: fixed; 
+  width: 100%; 
+}
+
+#navbar a {
+  float: right;
+  display: inline;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 a {
@@ -26,15 +41,14 @@ a {
   color: cornflowerblue;
   position: relative;
   padding: 20px;
+  font-size: 1.5em;
   font-family: 'Merriweather Sans', sans-serif;
 }
 
 .background {
-  position: relative;
-  text-align: center;
-  width: 200%;
+  width: 100%;
   height: 285px;
-  margin: -26px;
+  background-size: cover;
 }
 
 p{
@@ -47,7 +61,7 @@ p{
 
 .image {
   width: 35%;
-  float: right;
+  float: left;
   position: relative;
 }
 
