@@ -24,7 +24,7 @@ body{
 
 #navbar a {
   float: right;
-  display: inline;
+  display: block;
   text-align: center;
   padding: 15px;
   text-decoration: none;
