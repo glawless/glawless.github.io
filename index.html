@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--  Stylesheet  -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Garrett Lawless Website</title>
 </head>
-
-<body>
   <!-- Content -->
   <header>
     <picture>
@@ -26,17 +26,31 @@
     <a href="https://codepen.io/your-work/" target="_blank" rel="noopener noreferrer">Codepen</a>
     <a href="https://sway.office.com/zhdqomEFi8JCBIyu?play" target="_blank" rel="noopener noreferrer">Resume</a>
   </div>
+  <body>
 
   <p>Hello there, and welcome to my personal website. <br>
     I am a recent graduate at Eastern Washington University. <br>
     Bachelor of Computer Science with a UX Certificate.</p>
+
+    <div class="container">
+      <h3>Weather App</h3>
+
+      <img src="" alt="" srcset="" id="weather-icon">
+      <div id="location">Unable to Fetch Weather</div>
+      <div class="desc">No Information Available.</div>
+      <div class="weather">
+        <div class="f">Error</div>
+      </div>
+      <div class="info">
+        <h4>L: <span class="temp_min">Not Available</span></h4>
+        <h4>H: <span class="temp_max">Not Available</span></h4>
   
-
-  <img class="image" src="Images/me.jpg" srcset="Images/me.jpg 2x" srcset="Images/me.jpg 3x"
-    srcset="Images/me.jpg" alt="Garrett Lawless">
-
-
-
+        <h4>Sunrise: <span class="sunrise">Error</span></h4>
+        <h4>Sunset: <span class="sunset">Error</span></h4>
+      </div>
+  
+    </div>
+    <script src="scripts.js"></script>
 
 
     </body>
