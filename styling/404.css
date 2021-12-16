@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+
+body {
+    background: #101820FF;
+    font-family: "Open Sans", serif;
+  }
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    color: cornflowerblue;
+    position: relative;
+    font-size: 1.5em;
+    font-family: 'Merriweather Sans', sans-serif;
+    display: block;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
