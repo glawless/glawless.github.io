@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FCFBFA;
+    color: #00B7F1;
+    text-align: center;
+}
+
+#logo {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 200px;
+}
+
+div.jumbotron {
+    /* font-size: 3rem; */
+    color: #00B7F1;
+}
+
+footer {
+    color: #B3D671;
+    /* position: absolute; */
+    bottom: 5px;
+
+}
+
+.fa-cog {
+    padding-left: 5px;
+}
+
+.btn.btn-primary {
+    background-color: #00B7F1;
+}

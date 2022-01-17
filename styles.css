@@ -55,7 +55,7 @@ p {
   color: slategray;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 25px;
-
+  text-align: center;
 }
 
 .center {
@@ -77,6 +77,7 @@ p {
 }
 
 .container {
+  margin: auto;
   height: 50%;
   width: 50%;
   display: flex;
@@ -86,6 +87,13 @@ p {
   flex-direction: column;
   background: rgb(251, 242, 133);
   background: radial-gradient(closest-side, #7E8D85, #B3BFB8, #3C493F);
+}
+
+#weather {
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .weather {

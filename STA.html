@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STAstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="STAcolor.js"></script>
+    <script src="STA.js"></script>
+    <title>STA Bus Schedule</title>
+</head>
+
+<body>
+    <img id="logo" src="https://www.spokanetransit.com/files/content/STA_Vert_WithoutTag_RGB.png" alt="logo">
+    <div id="app"></div>
+
+    <div id="stopModal" class="modal fade" id="stopsForm" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Stops</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="stops" name="stops">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Select Route</label>
+                            <select class="form-control" name='routeselect'
+                                onChange="givedata(document.stops.routeselect.options[document.stops.routeselect.options.selectedIndex].value)"
+                                id="exampleFormControlSelect1">
+                            </select>
+                        </div>
+                    </form>
+                    <form id="stops" name="stops2">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">Select Stops</label>
+                            <select class="form-control" name="stopselect" id="exampleFormControlSelect2">
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="updateStop" type="button" class="btn btn-primary" data-dismiss="modal">Save
+                        stops</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="styleModal" class="modal fade" id="settings" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Display Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" action="/action_page.php">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="pcolor">Primary Color:</label>
+                            <div class="col-sm-10">
+                                <input id="primarycolor" class="jscolor form-control" value="00B7F1">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="scolor">Secondary Color:</label>
+                            <div class="col-sm-10">
+                                <input id="secondarycolor" class="jscolor form-control" value="B3D671">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="imageurl">Image Link:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="imageurl"
+                                    value="https://www.spokanetransit.com/files/content/STA_Vert_WithoutTag_RGB.png">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id="updateStyle" type="button" class="btn btn-primary" data-dismiss="modal">Save
+                        changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <!--<p>Garrett Lawless & Ryan Bucherl</p>-->
+    </footer>
+</body>
+
+</html>
