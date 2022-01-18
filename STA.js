@@ -1,4 +1,4 @@
-let api = 'https://52.88.188.196:8080/api/api/where/';
+let api = 'http://52.88.188.196:8080/api/api/where/';
 let key = '?key=TEST';
 let stopID = 'STA_ELMPUBWF';
 let routeID = "";

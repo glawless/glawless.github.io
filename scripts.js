@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
       // Storing Longitude and Latitude in variables
       long = position.coords.longitude;
       lat = position.coords.latitude;
-      const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
+      const base = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
 
       console.log(base);
 
