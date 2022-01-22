@@ -7,76 +7,138 @@
 body {
   background: #101820FF;
   font-family: "Merriweather Sans", serif;
-
+  margin: 0;
 }
 
-#navbar {
-  list-style-type: none;
-  padding: 20px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
-  position: fixed;
+.navbar {
+  height: 50px;
   width: 100%;
-}
-
-#navbar a {
-  float: right;
-  display: block;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-a {
-  text-decoration: none;
-  text-align: center;
-  color: cornflowerblue;
+  background-color: #4d4d4d;
   position: relative;
-  padding: 20px;
-  font-size: 1.2em;
-  font-family: 'Merriweather Sans', sans-serif;
 }
 
-.background {
-  width: 100%;
-  height: 255px;
-  background-size: cover;
+.navbar>.navbar-header {
+  display: inline;
+}
+
+.navbar>.navbar-header>.navbar-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.navbar>.navButton {
+  display: none;
+}
+
+.navbar>.navbar-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.navbar>.navbar-links>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.navbar>.navbar-links>a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar>#nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .navbar>.navButton {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .navbar>.navButton>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .navbar>.navButton>label:hover,
+  .navbar #nav-check:checked~.navButton>label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar>.navButton>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .navbar>.navbar-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  .navbar>.navbar-links>a {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar>#nav-check:not(:checked)~.navbar-links {
+    height: 0px;
+  }
+
+  .navbar>#nav-check:checked~.navbar-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+}
+
+#title {
+  color: whitesmoke;
+  letter-spacing: 4px;
+  font-family: 'Merriweather Sans', sans-serif;
+  opacity: 1;
+  animation: fadein 4s;
 }
 
 p {
+  display: block;
   margin: 45px;
-  color: slategray;
+  color: whitesmoke;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 25px;
   text-align: center;
 }
 
-.center {
-  position: absolute;
-  top: 8%;
-  left: 5%;
-  font-size: 70px;
-  color: whitesmoke;
-  letter-spacing: 6px;
-  font-family: 'Merriweather Sans', sans-serif;
-  text-align: center;
-  opacity: 1;
-  animation: fadein 3s;
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
+/* weather */
 
 .container {
+  position: relative;
   margin: auto;
   height: 50%;
   width: 50%;
@@ -85,15 +147,18 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgb(251, 242, 133);
-  background: radial-gradient(closest-side, #7E8D85, #B3BFB8, #3C493F);
 }
 
 #weather {
+  background: url(Images/weatherBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   align-self: center;
   align-content: center;
   text-align: center;
   justify-content: center;
+  color: whitesmoke;
 }
 
 .weather {
@@ -101,6 +166,7 @@ p {
   align-items: center;
   margin: 15px 0;
   font-size: 5rem;
+
 }
 
 #location {
@@ -112,7 +178,6 @@ p {
 .desc {
   font-size: 1.5rem;
   text-transform: capitalize;
-  
 }
 
 .circle {

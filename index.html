@@ -7,26 +7,38 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--  Stylesheet  -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>Garrett Lawless Website</title>
+  <title>Garrett Lawless' Website</title>
 </head>
   <!-- Content -->
   <header>
-    <picture>
-      <img class="background" src="Images/Background Website.jpg" alt="Header">
-    </picture>
-  </header>
-  <div class="center">Garrett Lawless</div>
+    <div class="navbar">
+      <input type="checkbox" id="nav-check">
+      <div class="navbar-header">
+        <div class="navbar-title" id="title">
+          Garrett Lawless
+        </div>
+      </div>
+      <div class="navButton">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
 
-  <div id="navbar">
-    <a href="https://github.com/glawless" target="_blank" rel="noopener noreferrer">Github</a>
-    <a href="https://codepen.io/glawless" target="_blank" rel="noopener noreferrer">Codepen</a>
-    <a href="https://sway.office.com/zhdqomEFi8JCBIyu?play" target="_blank" rel="noopener noreferrer">Resume</a>
-    <a href="http://garelawless.com/STA.html" target="_blank" rel="noopener noreferrer">STA Bus</a>
-
+      <div class="navbar-links">
+      <a href="https://github.com/glawless" target="_blank" rel="noopener noreferrer">Github</a>
+      <a href="https://codepen.io/glawless" target="_blank" rel="noopener noreferrer">Codepen</a>
+      <a href="https://sway.office.com/zhdqomEFi8JCBIyu?play" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="http://garelawless.com/STA.html" target="_blank" rel="noopener noreferrer">STA Bus</a>
+    </div>
   </div>
+  </header>
+
   <body>
     <div>
       <p>Hello there, and welcome to my personal website. <br>
@@ -35,10 +47,14 @@
     </div>
 
     <div id="weather">
+    
     <div class="container">
-      <h3>Weather App</h3>
+
+
+      <h3>Local Weather</h3>
 
       <img src="" alt="" srcset="" id="weather-icon">
+      
       <div id="location">Unable to Fetch Weather</div>
       <div class="desc">No Information Available.</div>
       <div class="weather">
@@ -51,9 +67,10 @@
         <h4>Sunrise: <span class="sunrise">Error</span></h4>
         <h4>Sunset: <span class="sunset">Error</span></h4>
       </div>
+    </div>
   
     </div>
-  </div>
+  
     <script src="scripts.js"></script>
 
 

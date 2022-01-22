@@ -10,6 +10,9 @@ const tempH = document.querySelector(".temp_max");
 const sunriseDOM = document.querySelector(".sunrise");
 const sunsetDOM = document.querySelector(".sunset");
 
+
+
+//weather
 window.addEventListener("load", () => {
   let long;
   let lat;
@@ -52,9 +55,9 @@ window.addEventListener("load", () => {
           iconImg.src = iconUrl;
           loc.textContent = `${place}`;
           desc.textContent = `${description}`;
-          tempF.textContent = `${fahrenheit.toFixed(2)} °F`;
-          tempL.textContent = `${minFahrenheit.toFixed(2)} °F`;
-          tempH.textContent = `${maxFahrenheit.toFixed(2)} °F`;
+          tempF.textContent = `${fahrenheit.toFixed(0)} °F`;
+          tempL.textContent = `${minFahrenheit.toFixed(0)} °F`;
+          tempH.textContent = `${maxFahrenheit.toFixed(0)} °F`;
 
           sunriseDOM.textContent = `${sunriseGMT.toLocaleDateString()}, ${sunriseGMT.toLocaleTimeString(
             [],
