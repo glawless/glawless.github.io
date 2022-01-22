@@ -34,7 +34,7 @@
       <a href="https://github.com/glawless" target="_blank" rel="noopener noreferrer">Github</a>
       <a href="https://codepen.io/glawless" target="_blank" rel="noopener noreferrer">Codepen</a>
       <a href="https://sway.office.com/zhdqomEFi8JCBIyu?play" target="_blank" rel="noopener noreferrer">Resume</a>
-      <a href="http://garelawless.com/STA.html" target="_blank" rel="noopener noreferrer">STA Bus</a>
+      <a href="#projectHeader">Projects</a>
     </div>
   </div>
 </header>
@@ -50,54 +50,63 @@
   </div>
 
   <div>
-    <h2 id="projectHeader">
+    <h2 class="Projects" id="projectHeader">
       Projects
     </h2>
+  </div>
 
   <div>
+    <div>
+      <h3 id="projectTitle">
+        Weather Application Project
+      </h3>
+    </div>
+    <div>
+      <p>
+        A side project that I created using openweathermap api. <br>
+        Allows access to current weather data for your current location.<br>
+        Created in HTML, css, and javaScript.
+      </p>
+    </div>
 
-  <div >
+    <div id="weather">
+      <div class="container">
+        <h3>Local Weather</h3>
+        <img src="" alt="" srcset="" id="weather-icon">
+        <div id="location">No Connection</div>
+        <div class="desc">No Connection</div>
+        <div class="weather">
+          <div class="f">Error</div>
+        </div>
+        <div class="info">
+          <h4>L: <span class="temp_min">Not Available</span></h4>
+          <h4>H: <span class="temp_max">Not Available</span></h4>
+          <h4>Sunrise: <span class="sunrise">Error</span></h4>
+          <h4>Sunset: <span class="sunset">Error</span></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
     <h3 id="projectTitle">
-      Weather Application Project
+      Spokane Bus Schedule
     </h3>
   </div>
   <div>
     <p>
-      A side project that I created using openweathermap api. <br>
-       Allows access to current weather data for your current location.<br>
-      Created in HTML, css, and javaScript.
+      A school project that I created using Spokane Transit Authority's api. <br>
+      Allows you to select the route and stops, along with seeing how many stops away the bus is and the arrival time. <br>
+      Allows user to update badging or stay with company color scheme.<br>
+      Created using the Bootstrap framework. Try it out <a href="http://garelawless.com/STA.html" target="_blank" rel="noopener noreferrer"
+      color="rgb(129, 183, 199)"><u>here</u></a>
     </p>
+
+    <img src="Images/STA.png" alt="Picture of Spokane Bus Schedule Application" id="STApicture" width="700" height="300">
+
   </div>
 
-  <div id="weather">
-
-    <div class="container">
-
-      <h3>Local Weather</h3>
-
-      <img src="" alt="" srcset="" id="weather-icon">
-
-      <div id="location">No Connection</div>
-      <div class="desc">No Connection</div>
-      <div class="weather">
-        <div class="f">Error</div>
-      </div>
-      <div class="info">
-        <h4>L: <span class="temp_min">Not Available</span></h4>
-        <h4>H: <span class="temp_max">Not Available</span></h4>
-
-        <h4>Sunrise: <span class="sunrise">Error</span></h4>
-        <h4>Sunset: <span class="sunset">Error</span></h4>
-      </div>
-    </div>
-  </div>
-</div>
 
   <script src="scripts.js"></script>
-
-
 </body>
-
-
-
 </html>

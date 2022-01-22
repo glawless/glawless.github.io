@@ -53,7 +53,7 @@ body {
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:622px) {
   .navbar>.navButton {
     display: inline-block;
     position: absolute;
@@ -105,7 +105,6 @@ body {
     height: fit-content;
     overflow-y: auto;
   }
-
 }
 
 @keyframes fadein {
@@ -132,7 +131,6 @@ body {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 16px;
   text-align: center;
-
 }
 
 #nameTitle {
@@ -147,7 +145,6 @@ h3 {
 }
 
 p {
-  
   margin-bottom: 2em;
   color: rgb(129, 183, 199);
   font-family: 'Merriweather Sans', sans-serif;
@@ -156,7 +153,6 @@ p {
 }
 
 #projectTitle {
-  
   color: whitesmoke;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 22px;
@@ -170,14 +166,16 @@ p {
   font-size: 2.5rem;
   text-align: center;
   padding: 5vw;
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
   font-weight: 700;
-
-
 }
 
-
-
+#STApicture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* weather */
 
@@ -193,6 +191,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  margin-bottom: 1.5em;
 }
 
 #weather {
@@ -208,7 +207,6 @@ p {
   align-items: center;
   margin: 15px 0;
   font-size: 5rem;
-
 }
 
 #location {
