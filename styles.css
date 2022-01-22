@@ -108,23 +108,6 @@ body {
 
 }
 
-#title {
-  color: whitesmoke;
-  letter-spacing: 4px;
-  font-family: 'Merriweather Sans', sans-serif;
-  opacity: 1;
-  animation: fadein 4s;
-}
-
-p {
-  display: block;
-  margin: 45px;
-  color: whitesmoke;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 25px;
-  text-align: center;
-}
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -135,25 +118,84 @@ p {
   }
 }
 
+#title {
+  color: whitesmoke;
+  letter-spacing: 4px;
+  font-family: 'Merriweather Sans', sans-serif;
+  opacity: 1;
+  animation: fadein 4s;
+}
+
+#intro {
+  margin-bottom: 2em;
+  color: rgb(129, 183, 199);
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+
+}
+
+#nameTitle {
+  margin-top: 2em;
+}
+
+h3 {
+  color: whitesmoke;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+p {
+  
+  margin-bottom: 2em;
+  color: rgb(129, 183, 199);
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+#projectTitle {
+  
+  color: whitesmoke;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+#projectHeader {
+  background-color: rgb(34, 53, 71);
+  color: whitesmoke;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 5vw;
+  margin-bottom: 1.5em;
+  font-weight: 700;
+
+
+}
+
+
+
+
 /* weather */
 
 .container {
   position: relative;
   margin: auto;
-  height: 50%;
-  width: 50%;
   display: flex;
   padding: 20px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-#weather {
   background: url(Images/weatherBackground.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+#weather {
   align-self: center;
   align-content: center;
   text-align: center;
@@ -170,13 +212,13 @@ p {
 }
 
 #location {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 1000;
   font-style: italic;
 }
 
 .desc {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-transform: capitalize;
 }
 

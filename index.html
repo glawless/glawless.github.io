@@ -13,68 +13,90 @@
   <link rel="stylesheet" href="styles.css">
   <title>Garrett Lawless' Website</title>
 </head>
-  <!-- Content -->
-  <header>
-    <div class="navbar">
-      <input type="checkbox" id="nav-check">
-      <div class="navbar-header">
-        <div class="navbar-title" id="title">
-          Garrett Lawless
-        </div>
+<!-- Content -->
+<header>
+  <div class="navbar">
+    <input type="checkbox" id="nav-check">
+    <div class="navbar-header">
+      <div class="navbar-title" id="title">
+        Garrett Lawless
       </div>
-      <div class="navButton">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
+    </div>
+    <div class="navButton">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
 
-      <div class="navbar-links">
+    <div class="navbar-links">
       <a href="https://github.com/glawless" target="_blank" rel="noopener noreferrer">Github</a>
       <a href="https://codepen.io/glawless" target="_blank" rel="noopener noreferrer">Codepen</a>
       <a href="https://sway.office.com/zhdqomEFi8JCBIyu?play" target="_blank" rel="noopener noreferrer">Resume</a>
       <a href="http://garelawless.com/STA.html" target="_blank" rel="noopener noreferrer">STA Bus</a>
     </div>
   </div>
-  </header>
+</header>
 
-  <body>
-    <div>
-      <p>Hello there, and welcome to my personal website. <br>
-        I am a recent graduate at Eastern Washington University. <br>
-        Bachelor of Computer Science with a UX Certificate.</p>
-    </div>
+<body>
+  <div>
+    <h3 id="nameTitle">Hello there, I am Garrett Lawless</h3>
+    <p id="intro">
+      I am a recent graduate at Eastern Washington University. <br>
+      Bachelor of Computer Science with a minor in UX. <br>
+      My goal is to become a proficient programmer and gain new skillsets along the way.
+    </p>
+  </div>
 
-    <div id="weather">
-    
+  <div>
+    <h2 id="projectHeader">
+      Projects
+    </h2>
+
+  <div>
+
+  <div >
+    <h3 id="projectTitle">
+      Weather Application Project
+    </h3>
+  </div>
+  <div>
+    <p>
+      A side project that I created using openweathermap api. <br>
+       Allows access to current weather data for your current location.<br>
+      Created in HTML, css, and javaScript.
+    </p>
+  </div>
+
+  <div id="weather">
+
     <div class="container">
-
 
       <h3>Local Weather</h3>
 
       <img src="" alt="" srcset="" id="weather-icon">
-      
-      <div id="location">Unable to Fetch Weather</div>
-      <div class="desc">No Information Available.</div>
+
+      <div id="location">No Connection</div>
+      <div class="desc">No Connection</div>
       <div class="weather">
         <div class="f">Error</div>
       </div>
       <div class="info">
         <h4>L: <span class="temp_min">Not Available</span></h4>
         <h4>H: <span class="temp_max">Not Available</span></h4>
-  
+
         <h4>Sunrise: <span class="sunrise">Error</span></h4>
         <h4>Sunset: <span class="sunset">Error</span></h4>
       </div>
     </div>
-  
-    </div>
-  
-    <script src="scripts.js"></script>
+  </div>
+</div>
+
+  <script src="scripts.js"></script>
 
 
-    </body>
+</body>
 
 
 
