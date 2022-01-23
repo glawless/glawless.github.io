@@ -179,8 +179,24 @@ p {
 
 }
 
-a:visited{
+a {
   color: whitesmoke;
+}
+
+a:visited{
+  color: rgb(129, 183, 199);
+}
+
+footer > p {
+  margin-bottom: .5em;
+  color: rgb(129, 183, 199);
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+footer {
+  display: block;
 }
 
 /* weather */
